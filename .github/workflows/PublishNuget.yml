@@ -19,6 +19,6 @@ jobs:
       run: |  
         cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
         .\MSBuild.exe $Env:GITHUB_WORKSPACE\src\LiquidTechnologies.FastInfoSet -t:restore
-        .\MSBuild.exe $Env:GITHUB_WORKSPACE\src\LiquidTechnologies.FastInfoSet
+        .\MSBuild.exe $Env:GITHUB_WORKSPACE\src\LiquidTechnologies.FastInfoSet /property:Configuration=Release
     - name: Publish Nuget to registry
-      run: dotnet nuget push .\src\LiquidTechnologies.FastInfoSet\out\*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://www.nuget.org/api/v2/package
+      run: dotnet nuget push .\src\LiquidTechnologies.FastInfoSet\bin\Release\*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://www.nuget.org/api/v2/package
