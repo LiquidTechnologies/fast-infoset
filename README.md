@@ -1,6 +1,4 @@
-# fast-infoset
-
-Liquid Fast Infoset - XML Compression Library
+# Liquid Fast Infoset - XML Compression Library
 
 Liquid Fast Infoset .Net is a C# class library that allows you to add XML Compression support to your .Net project.
 Fast Infoset is a ITU-T (X.891) and ISO (IEC 24824-1) standard for producing small binary XML documents that are fast to parse.
