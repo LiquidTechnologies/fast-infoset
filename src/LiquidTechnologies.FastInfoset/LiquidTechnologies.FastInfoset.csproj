@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net20</TargetFrameworks>
+    <Authors>Andrew Farrell</Authors>
+    <Company>Liquid Technologies Ltd</Company>
+    <Product>Liquid Fast Infoset</Product>
+    <Description>Liquid Fast Infoset - XML Compression Library
+Liquid Fast Infoset .Net is a C# class library that allows you to add XML Compression support to your .Net project.
+Fast Infoset is a ITU-T (X.891) and ISO (IEC 24824-1) standard for producing small binary XML documents that are fast to parse.</Description>
+    <Copyright>Copyright © 2001-2019 Liquid Technologies Limited. All rights reserved.</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/LiquidTechnologies/fast-infoset</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/LiquidTechnologies/fast-infoset</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>XML Compression FastInfoset FI X.891 24824-1</PackageTags>
+    <PackageReleaseNotes>Moved from sourceforge</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>LiquidOpenSourcePublicKey.snk</AssemblyOriginatorKeyFile>
+    <PackageIconUrl>fast-info-set.png</PackageIconUrl>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\LiquidTechnologies.FastInfoset.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\fast-info-set.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+
+</Project>

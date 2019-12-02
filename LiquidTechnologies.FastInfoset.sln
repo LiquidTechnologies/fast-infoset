@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiquidTechnologies.FastInfoset", "src\LiquidTechnologies.FastInfoset\LiquidTechnologies.FastInfoset.csproj", "{25281D63-F3E3-41B4-8CDC-337EC50AD975}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A0E3F763-36E3-4107-9E0F-FD427CF683F9}"
+	ProjectSection(SolutionItems) = preProject
+		fast-info-set.png = fast-info-set.png
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25281D63-F3E3-41B4-8CDC-337EC50AD975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25281D63-F3E3-41B4-8CDC-337EC50AD975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25281D63-F3E3-41B4-8CDC-337EC50AD975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25281D63-F3E3-41B4-8CDC-337EC50AD975}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06AE69E3-3093-463F-9257-AFE239610BE8}
+	EndGlobalSection
+EndGlobal
