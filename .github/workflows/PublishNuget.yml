@@ -7,7 +7,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: windows-2019
 
     steps:
     - uses: actions/checkout@v1
@@ -16,10 +16,9 @@ jobs:
       with:
         dotnet-version: 2.2.108
     - name: Build with dotnet
-      run: dotnet build --configuration Release src/LiquidTechnologies.FastInfoSet/LiquidTechnologies.FastInfoSet.csproj
-    - name: Package Release
       run: |  
-        cd src/LiquidTechnologies.FastInfoSet
-        dotnet pack -c Release -o out
+        cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
+        .\MSBuild.exe $Env:GITHUB_WORKSPACE\src\LiquidTechnologies.FastInfoSet -t:restore
+        .\MSBuild.exe $Env:GITHUB_WORKSPACE\src\LiquidTechnologies.FastInfoSet
     - name: Publish Nuget to registry
       run: dotnet nuget push .\src\LiquidTechnologies.FastInfoSet\out\*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://www.nuget.org/api/v2/package
