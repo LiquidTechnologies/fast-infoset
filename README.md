@@ -7,6 +7,9 @@ This implementation support for
 * .Net 2 Framework and above 
 * .Net Standard 2.0 
 
+Nuget is available here:
+https://www.nuget.org/packages/LiquidTechnologies.FastInfoset/
+
 Liquid Fast Infoset was written as a commercial product by Liquid Technologies Limited, and is now been released for use in Open Source projects under the GNU Affero General Public License:
 https://www.gnu.org/licenses/.
 
