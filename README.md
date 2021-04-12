@@ -8,7 +8,7 @@ This implementation support for
 * .Net Standard 2.0 
 
 Liquid Fast Infoset was written as a commercial product by Liquid Technologies Limited, and is now been released for use in Open Source projects under the GNU Affero General Public License:
-http://www.gnu.org/licenses/.
+https://www.gnu.org/licenses/.
 
 For product and commercial licensing details please contact us:
-http://www.liquid-technologies.com
+https://www.liquid-technologies.com
